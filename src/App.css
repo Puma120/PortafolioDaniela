@@ -1,0 +1,16 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Asegurar que cada sección ocupe el espacio necesario */
+section {
+  width: 100%;
+  position: relative;
+}
+
+/* Scroll suave entre secciones */
+html {
+  scroll-behavior: smooth;
+}

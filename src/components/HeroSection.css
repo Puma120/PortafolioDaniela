@@ -1,0 +1,170 @@
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 1s ease;
+}
+
+.hero-section.black {
+  background-color: var(--black);
+}
+
+.hero-section.pink {
+  background-color: var(--pink);
+  color: var(--black);
+}
+
+/* Elementos en sección rosa con texto negro */
+.hero-section.pink .hero-subtitle,
+.hero-section.pink .collage-element,
+.hero-section.pink .scroll-indicator {
+  color: var(--black);
+}
+
+.hero-section.pink .hero-button {
+  border-color: var(--black);
+  color: var(--black);
+}
+
+.hero-section.pink .hero-button:hover {
+  background-color: var(--black);
+  color: var(--pink);
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 10;
+  position: relative;
+  padding: 2rem;
+  max-width: 1200px;
+}
+
+.hero-title {
+  margin-bottom: 1rem;
+  text-shadow: 5px 5px 0 rgba(255, 216, 245, 0.3);
+  transform: rotate(-2deg);
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Color especial para la palabra EXPRESIÓN */
+.hero-title .expresion-highlight {
+  color: #ff006e;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.hero-button {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  padding: 1.2rem 3rem;
+}
+
+/* Elementos collage flotantes */
+.collage-element {
+  position: absolute;
+  font-size: 4rem;
+  opacity: 0.3;
+  animation: float 3s ease-in-out infinite;
+  color: var(--white);
+}
+
+.collage-1 {
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.collage-2 {
+  top: 20%;
+  right: 15%;
+  animation-delay: 1s;
+}
+
+.collage-3 {
+  bottom: 15%;
+  left: 20%;
+  animation-delay: 2s;
+}
+
+/* Indicador de scroll */
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, 10px); }
+}
+
+/* Formas decorativas */
+.decorative-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.1;
+}
+
+.shape {
+  position: absolute;
+  background: var(--white);
+}
+
+.hero-section.pink .shape {
+  background: var(--black);
+}
+
+.shape-1 {
+  width: 200px;
+  height: 200px;
+  top: -100px;
+  right: 10%;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transform: rotate(45deg);
+}
+
+.shape-2 {
+  width: 150px;
+  height: 150px;
+  bottom: 10%;
+  left: 5%;
+  clip-path: circle(50%);
+}
+
+.shape-3 {
+  width: 180px;
+  height: 180px;
+  top: 30%;
+  right: -50px;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .collage-element {
+    font-size: 2rem;
+  }
+}

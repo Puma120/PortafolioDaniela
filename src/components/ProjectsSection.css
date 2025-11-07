@@ -1,0 +1,47 @@
+.projects-section {
+  min-height: 100vh;
+  background: var(--black);
+  position: relative;
+}
+
+.projects-header {
+  text-align: center;
+  padding: 5rem 2rem 3rem;
+  background: linear-gradient(180deg, var(--black) 0%, transparent 100%);
+}
+
+.projects-title {
+  margin-bottom: 1rem;
+  transform: rotate(-1deg);
+  display: inline-block;
+}
+
+.projects-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  letter-spacing: 2px;
+}
+
+.projects-container {
+  width: 100%;
+}
+
+/* DIVISOR DE SECCIÓN */
+.section-divider {
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 2rem;
+  color: var(--pink);
+  animation: float 3s ease-in-out infinite;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .projects-header {
+    padding: 3rem 1rem 2rem;
+  }
+  
+  .projects-subtitle {
+    font-size: 1rem;
+  }
+}

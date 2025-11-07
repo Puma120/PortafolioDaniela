@@ -1,0 +1,138 @@
+/* VARIABLES DE COLOR - ESTÉTICA MAXIMALISTA */
+:root {
+  --black: #000000;
+  --pink: #ffd8f5;
+  --white: #ffffff;
+  --pink-light: #ffd8f5;
+  --gray: #1a1a1a;
+  
+  font-family: 'Arial Black', 'Arial Bold', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 700;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+/* TIPOGRAFÍA BOLD ESTILO STENCIL */
+h1, h2, h3 {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: clamp(3rem, 8vw, 8rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 5rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.6;
+}
+
+/* RESALTADO EN ROSA */
+.highlight {
+  color: var(--pink);
+  font-weight: 900;
+  text-shadow: 2px 2px 0 var(--black);
+}
+
+/* ENLACES */
+a {
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--pink);
+  transform: scale(1.05);
+}
+
+/* BOTONES MAXIMALISTAS */
+button, .button {
+  background-color: transparent;
+  color: var(--white);
+  border: 3px solid var(--pink);
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
+
+button:hover, .button:hover {
+  background-color: var(--pink);
+  color: var(--black);
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 5px 5px 0 var(--white);
+}
+
+/* EFECTO RECORTE DE PAPEL */
+.cut-out {
+  position: relative;
+  background: var(--white);
+  color: var(--black);
+  padding: 2rem;
+  clip-path: polygon(
+    0 5%, 5% 0, 10% 2%, 95% 0, 100% 5%, 
+    98% 95%, 100% 100%, 5% 100%, 0 95%
+  );
+}
+
+.cut-out::before {
+  content: '✂ cut here...';
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  font-size: 0.8rem;
+  color: var(--white);
+  font-weight: 400;
+}
+
+/* SCROLL SUAVE */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ANIMACIONES */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}

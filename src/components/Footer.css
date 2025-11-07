@@ -1,0 +1,229 @@
+.footer {
+  background: var(--black);
+  color: var(--white);
+  padding: 4rem 2rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* TÍTULO DEL FOOTER */
+.footer-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* REDES SOCIALES */
+.social-links {
+  margin-bottom: 3rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 1rem;
+  position: relative;
+}
+
+.social-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background: var(--pink);
+  transition: width 0.3s ease;
+}
+
+.social-link:hover::before {
+  width: 100%;
+}
+
+.social-link:hover {
+  transform: translateY(-5px);
+  color: var(--pink);
+}
+
+.social-link .icon {
+  font-size: 2.5rem;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover .icon {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.social-link .label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ESTILOS ESPECÍFICOS POR RED SOCIAL */
+.instagram:hover { color: #E1306C; }
+.behance:hover { color: #1769FF; }
+.tiktok:hover { color: #00F2EA; }
+.pinterest:hover { color: #E60023; }
+.email:hover { color: var(--pink); }
+
+/* DIVISOR */
+.footer-divider {
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 1.5rem;
+  color: var(--pink);
+  opacity: 0.6;
+  letter-spacing: 5px;
+}
+
+/* INFORMACIÓN DEL FOOTER */
+.footer-info {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer-text {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+/* BOTÓN VOLVER ARRIBA */
+.back-to-top {
+  display: block;
+  margin: 2rem auto 0;
+  background: transparent;
+  border: 3px solid var(--pink);
+  color: var(--white);
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 95% 100%, 5% 100%, 0 70%);
+}
+
+.back-to-top:hover {
+  background: var(--pink);
+  color: var(--black);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px var(--pink);
+}
+
+/* ELEMENTOS DECORATIVOS */
+.footer-decorations {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.1;
+}
+
+.deco-element {
+  position: absolute;
+  font-size: 4rem;
+  color: var(--pink);
+  animation: float 4s ease-in-out infinite;
+}
+
+.deco-1 {
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.deco-2 {
+  top: 50%;
+  right: 15%;
+  animation-delay: 1s;
+}
+
+.deco-3 {
+  bottom: 20%;
+  left: 20%;
+  animation-delay: 2s;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer {
+    padding: 3rem 1rem 2rem;
+  }
+  
+  .footer-title {
+    font-size: 1.5rem;
+  }
+  
+  .social-icons {
+    gap: 1.5rem;
+  }
+  
+  .social-link .icon {
+    font-size: 2rem;
+  }
+  
+  .social-link .label {
+    font-size: 0.8rem;
+  }
+  
+  .footer-text {
+    font-size: 1rem;
+  }
+  
+  .back-to-top {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* ANIMACIÓN DE ENTRADA */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer-container > * {
+  animation: fadeIn 0.6s ease forwards;
+}
