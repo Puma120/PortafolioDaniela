@@ -131,6 +131,33 @@ const projectsData = [
     ]
   },
   {
+    title: "PRÁCTICAS PROFESIONALES",
+    category: "Experiencia Profesional - Modatrends",
+    year: "2024",
+    description: "Experiencia profesional en la empresa Modatrends, especializada en investigación y análisis de tendencias de moda. Durante las prácticas, participé en la investigación de tendencias emergentes, colaboré en la organización y producción de dos pasarelas de moda, y desarrollé visuales para presentaciones y comunicación de tendencias.",
+    keywords: ["TENDENCIAS", "PASARELAS", "VISUAL DESIGN"],
+    inspiration: "Investigación de mercado, coolhunting, análisis de tendencias globales y producción de eventos",
+    materials: "Investigación visual, organización de eventos, diseño gráfico, presentaciones",
+    award: "💼 Experiencia Profesional",
+    coverImage: "/Trabajo_Practicas/Portada.png",
+    gallery: [
+      { src: "/Trabajo_Practicas/2.png", title: "Investigación de Tendencias 1" },
+      { src: "/Trabajo_Practicas/3.png", title: "Investigación de Tendencias 2" },
+      { src: "/Trabajo_Practicas/4.png", title: "Investigación de Tendencias 3" },
+      { src: "/Trabajo_Practicas/5.png", title: "Organización de Pasarela 1" },
+      { src: "/Trabajo_Practicas/6.png", title: "Organización de Pasarela 2" },
+      { src: "/Trabajo_Practicas/7.png", title: "Visuales 1" },
+      { src: "/Trabajo_Practicas/8.png", title: "Visuales 2" },
+      { src: "/Trabajo_Practicas/9.png", title: "Visuales 3" },
+      { src: "/Trabajo_Practicas/10.png", title: "Visuales 4" },
+      { src: "/Trabajo_Practicas/11.png", title: "Visuales 5" },
+      { src: "/Trabajo_Practicas/12.png", title: "Visuales 6" },
+      { src: "/Trabajo_Practicas/13.png", title: "Visuales 7" },
+      { src: "/Trabajo_Practicas/14.png", title: "Visuales 8" },
+      { src: "/Trabajo_Practicas/15.png", title: "Visuales 9" }
+    ]
+  },
+  {
     title: "PAPER DREAMS",
     category: "Alta Costura",
     year: "2024",
