@@ -82,7 +82,7 @@ const AboutMeSection = () => {
                   className="photo-real photo-1"
                 />
                 <div className="photo-overlay">
-                  <span>👁️ Click para ver</span>
+                  <span>Click para ver completa</span>
                 </div>
                 <p className="photo-caption">Estilismo</p>
               </div>
@@ -106,7 +106,7 @@ const AboutMeSection = () => {
                   className="photo-real photo-3"
                 />
                 <div className="photo-overlay">
-                  <span>👁️ Click para ver</span>
+                  <span>Click para ver completa</span>
                 </div>
                 <p className="photo-caption">TikTok Creator</p>
               </div>
