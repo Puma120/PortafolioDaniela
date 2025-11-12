@@ -9,12 +9,12 @@ const Footer = () => {
         {/* Redes sociales */}
         <div className="social-links">
           <h3 className="footer-title">
-            CONECTEMOS <span className="highlight">✂</span>
+            CONECTEMOS
           </h3>
           
           <div className="social-icons">
             <a 
-              href="https://instagram.com" 
+              href="https://www.instagram.com/daniela.bvz?igsh=bjR3NDZ1NDdleXln&utm_source=qr" 
               target="_blank" 
               rel="noopener noreferrer"
               className="social-link instagram"
@@ -24,17 +24,7 @@ const Footer = () => {
             </a>
 
             <a 
-              href="https://behance.net" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="social-link behance"
-            >
-              <span className="icon">🎨</span>
-              <span className="label">Behance</span>
-            </a>
-
-            <a 
-              href="https://tiktok.com" 
+              href="https://www.tiktok.com/@daniela.bvz?_r=1&_t=ZS-91LOe7DJUoR" 
               target="_blank" 
               rel="noopener noreferrer"
               className="social-link tiktok"
@@ -43,29 +33,13 @@ const Footer = () => {
               <span className="label">TikTok</span>
             </a>
 
-            <a 
-              href="https://pinterest.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="social-link pinterest"
-            >
-              <span className="icon">📌</span>
-              <span className="label">Pinterest</span>
-            </a>
-
-            <a 
-              href="mailto:contacto@ejemplo.com" 
-              className="social-link email"
-            >
-              <span className="icon">✉️</span>
-              <span className="label">Email</span>
-            </a>
+            
           </div>
         </div>
 
         {/* Línea divisoria decorativa */}
         <div className="footer-divider">
-          <span>★ ✂ ★ ✂ ★ ✂ ★</span>
+          <span>★ ◆ ★ ◆ ★ ◆ ★</span>
         </div>
 
         {/* Información adicional */}
@@ -74,7 +48,7 @@ const Footer = () => {
             <span className="highlight">Diseño de Moda</span> · Experimentación · Cultura Visual
           </p>
           <p className="copyright">
-            © {currentYear} · Hecho con ♥ y mucha creatividad
+            © 2025 GitHub Puma120 
           </p>
         </div>
 
@@ -89,8 +63,8 @@ const Footer = () => {
         {/* Elementos decorativos */}
         <div className="footer-decorations">
           <div className="deco-element deco-1">★</div>
-          <div className="deco-element deco-2">✂</div>
-          <div className="deco-element deco-3">◆</div>
+          <div className="deco-element deco-2">◆</div>
+          <div className="deco-element deco-3">★</div>
         </div>
       </div>
     </footer>

@@ -1,6 +1,17 @@
+import { useState } from 'react';
 import './AboutMeSection.css';
 
 const AboutMeSection = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openImage = (src, alt) => {
+    setSelectedImage({ src, alt });
+  };
+
+  const closeImage = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <section className="about-section" id="about">
       <div className="about-container">
@@ -14,67 +25,90 @@ const AboutMeSection = () => {
           {/* Columna de texto con estética de papel rasgado */}
           <div className="about-text">
             <div className="text-block cut-out">
+              <h3 style={{marginBottom: '1rem', fontSize: '1.3rem'}}>DOMINIOS</h3>
               <p>
-                El diseño de moda es mi forma de <span className="highlight">expresión vital</span>. 
-                Cada prenda cuenta una historia, cada textura evoca una emoción.
+                <span className="highlight">Adobe Illustrator</span> · 
+                <span className="highlight"> Procreate</span> · 
+                <span className="highlight"> Photoshop</span>
               </p>
             </div>
 
             <div className="text-block cut-out">
+              <h3 style={{marginBottom: '1rem', fontSize: '1.3rem'}}>COMPETENCIAS ESPECÍFICAS</h3>
               <p>
-                Mis inspiraciones vienen del <span className="highlight">arte contemporáneo</span>, 
-                los <span className="highlight">videojuegos</span>, la cultura urbana y las 
-                contradicciones de la vida moderna.
+                • Expresión de tendencias textiles con base en mercados específicos<br/>
+                • Gestión de vínculos de colaboración y emprendimiento en el ámbito textil<br/>
+                • Fundamentación teórica e histórica de proyectos textiles
               </p>
             </div>
 
             <div className="text-block cut-out">
+              <h3 style={{marginBottom: '1rem', fontSize: '1.3rem'}}>COMPETENCIAS GENÉRICAS</h3>
               <p>
-                Creo en la moda como <span className="highlight">experimentación</span>, 
-                como collage visual, como manifiesto personal. Mi trabajo es maximalista, 
-                atrevido y auténtico.
+                • Compromiso humanista<br/>
+                • Creatividad, innovación y emprendimiento<br/>
+                • Trabajo colaborativo
+              </p>
+            </div>
+
+            <div className="text-block cut-out">
+              <h3 style={{marginBottom: '1rem', fontSize: '1.3rem'}}>ÁREAS DE INTERÉS</h3>
+              <p>
+                • Diseño y creación de nuevos artículos textiles<br/>
+                • Innovación en tendencias y su aplicación<br/>
+                • Creación de nuevos conceptos dirigidos y justificados al mercado que se busca<br/>
+                • <span className="highlight">Creación de contenido en TikTok</span><br/>
+                • <span className="highlight">Servicio de estilismo</span>
               </p>
             </div>
 
             <div className="keywords-section">
-              <span className="keyword">ARTE</span>
-              <span className="keyword">EXPERIMENTACIÓN</span>
-              <span className="keyword">CULTURA</span>
-              <span className="keyword">EXPRESIÓN</span>
-              <span className="keyword">VIDEOJUEGOS</span>
-              <span className="keyword">MODA</span>
+              <span className="keyword">DISEÑO TEXTIL</span>
+              <span className="keyword">TENDENCIAS</span>
+              <span className="keyword">INNOVACIÓN</span>
+              <span className="keyword">ESTILISMO</span>
+              <span className="keyword">CREADORA TIKTOK</span>
+              <span className="keyword">INGLÉS</span>
             </div>
           </div>
 
           {/* Columna de fotos estilo fotocabina */}
           <div className="about-photos">
             <div className="photobooth-strip">
-              <div className="photo-frame">
-                <div className="photo-placeholder photo-1">
-                  <span>📸</span>
+              <div className="photo-frame" onClick={() => openImage('/Sobre_mi/Sobre_mi_Estilizando.jpeg', 'Estilismo')}>
+                <img 
+                  src="/Sobre_mi/Sobre_mi_Estilizando.jpeg" 
+                  alt="Estilismo"
+                  className="photo-real photo-1"
+                />
+                <div className="photo-overlay">
+                  <span>👁️ Click para ver</span>
                 </div>
-                <p className="photo-caption">Proceso creativo</p>
+                <p className="photo-caption">Estilismo</p>
               </div>
 
-              <div className="photo-frame">
-                <div className="photo-placeholder photo-2">
-                  <span>✂️</span>
+              <div className="photo-frame" onClick={() => openImage('/Sobre_mi/Creación_Cont_tiktok_Estilismo.jpeg', 'Creación de contenido')}>
+                <img 
+                  src="/Sobre_mi/Creación_Cont_tiktok_Estilismo.jpeg" 
+                  alt="Creación de contenido"
+                  className="photo-real photo-2"
+                />
+                <div className="photo-overlay">
+                  <span>Click para ver completa</span>
                 </div>
-                <p className="photo-caption">Experimentación</p>
+                <p className="photo-caption">Creación de Contenido</p>
               </div>
 
-              <div className="photo-frame">
-                <div className="photo-placeholder photo-3">
-                  <span>🎨</span>
+              <div className="photo-frame" onClick={() => openImage('/Sobre_mi/Creación_Cont_tiktok_Estilismo (2).jpeg', 'TikTok Creator')}>
+                <img 
+                  src="/Sobre_mi/Creación_Cont_tiktok_Estilismo (2).jpeg" 
+                  alt="TikTok Creator"
+                  className="photo-real photo-3"
+                />
+                <div className="photo-overlay">
+                  <span>👁️ Click para ver</span>
                 </div>
-                <p className="photo-caption">Arte & Diseño</p>
-              </div>
-
-              <div className="photo-frame">
-                <div className="photo-placeholder photo-4">
-                  <span>⚡</span>
-                </div>
-                <p className="photo-caption">Inspiración</p>
+                <p className="photo-caption">TikTok Creator</p>
               </div>
             </div>
 
@@ -87,6 +121,16 @@ const AboutMeSection = () => {
         <div className="decoration-corner corner-1">✂</div>
         <div className="decoration-corner corner-2">★</div>
       </div>
+
+      {/* Modal para imagen ampliada */}
+      {selectedImage && (
+        <div className="image-modal" onClick={closeImage}>
+          <div className="modal-content">
+            <button className="close-modal" onClick={closeImage}>✕</button>
+            <img src={selectedImage.src} alt={selectedImage.alt} />
+          </div>
+        </div>
+      )}
     </section>
   );
 };

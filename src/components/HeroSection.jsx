@@ -23,15 +23,15 @@ const HeroSection = () => {
         <div className="collage-element collage-3">◆</div>
         
         <h1 className="hero-title">
-          MODA COMO
+           Daniela
           <br />
-          <span className="highlight expresion-highlight">EXPRESIÓN</span>
+          <span className="highlight expresion-highlight">Baltazar</span>
           <br />
-          VITAL
+          Vázquez
         </h1>
         
         <p className="hero-subtitle">
-          Diseño · Experimentación · Cultura Visual
+          Diseño Textil · Cultura Visual
         </p>
 
         <button className="hero-button" onClick={scrollToProjects}>
