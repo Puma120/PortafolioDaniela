@@ -1,42 +1,30 @@
 import './CertificatesSection.css';
 
-// Datos de ejemplo - reemplaza con tus certificados reales
+// Certificados reales
 const certificatesData = [
   {
-    title: "Diseño de Moda Avanzado",
-    institution: "Instituto de Moda",
+    title: "Programa de Arte",
+    institution: "Academia Europea di Firenze",
     year: "2024",
-    icon: "🎓"
+    duration: "1 mes",
+    location: "Florencia, Italia",
+    icon: "🎓",
+    image: "/Certificados/foto_en_academia_europea_di_Firenze.jpeg"
   },
   {
-    title: "Patronaje Industrial",
-    institution: "Escuela Técnica",
-    year: "2023",
-    icon: "✂️"
-  },
-  {
-    title: "Diseño Textil",
-    institution: "Universidad de Arte",
-    year: "2023",
-    icon: "🧵"
-  },
-  {
-    title: "Ilustración de Moda",
-    institution: "Academia de Arte",
-    year: "2022",
-    icon: "🎨"
-  },
-  {
-    title: "Marketing de Moda",
-    institution: "Business School",
-    year: "2022",
-    icon: "📊"
-  },
-  {
-    title: "Moda Sostenible",
-    institution: "Eco Fashion Institute",
+    title: "Curso de Historia del Arte",
+    institution: "Universidad Autónoma de México",
     year: "2024",
-    icon: "🌿"
+    icon: "🎨",
+    image: "/Certificados/historia_arte_Constancia_Daniela_Baltazar 2_page-0001.jpg"
+  },
+  {
+    title: "1er Lugar - La Repentina 2023",
+    institution: "Concurso de Diseño Textil",
+    year: "2023",
+    theme: "El poder de lo femenino",
+    icon: "🏆",
+    image: "/Certificados/Reconocimiento_1erLugar_Repentina2023_page-0001.jpg"
   }
 ];
 
@@ -65,12 +53,26 @@ const CertificatesSection = () => {
               {/* Estilo polaroid */}
               <div className="certificate-polaroid">
                 <div className="certificate-image">
-                  <span className="certificate-icon">{cert.icon}</span>
+                  {cert.image ? (
+                    <img 
+                      src={cert.image} 
+                      alt={cert.title}
+                      className="certificate-photo"
+                    />
+                  ) : (
+                    <span className="certificate-icon">{cert.icon}</span>
+                  )}
                 </div>
                 
                 <div className="certificate-info">
                   <h3 className="certificate-title">{cert.title}</h3>
                   <p className="certificate-institution">{cert.institution}</p>
+                  {cert.duration && (
+                    <p className="certificate-duration">Duración: {cert.duration}</p>
+                  )}
+                  {cert.location && (
+                    <p className="certificate-location">📍 {cert.location}</p>
+                  )}
                   <span className="certificate-year">{cert.year}</span>
                 </div>
 

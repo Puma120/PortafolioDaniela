@@ -133,7 +133,7 @@ const projectsData = [
   {
     title: "PRÁCTICAS PROFESIONALES",
     category: "Experiencia Profesional - Modatrends",
-    year: "2024",
+    year: "2025",
     description: "Experiencia profesional en la empresa Modatrends, especializada en investigación y análisis de tendencias de moda. Durante las prácticas, participé en la investigación de tendencias emergentes, colaboré en la organización y producción de dos pasarelas de moda, y desarrollé visuales para presentaciones y comunicación de tendencias.",
     keywords: ["TENDENCIAS", "PASARELAS", "VISUAL DESIGN"],
     inspiration: "Investigación de mercado, coolhunting, análisis de tendencias globales y producción de eventos",
