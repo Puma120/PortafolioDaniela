@@ -280,7 +280,7 @@ const ProjectsSection = () => {
 
       {/* Decoración divisoria */}
       <div className="section-divider">
-        <span>★ ✂ ★ ✂ ★</span>
+        <span>★ ◆ ★ ◆ ★</span>
       </div>
     </section>
   );

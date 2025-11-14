@@ -18,7 +18,7 @@ const HeroSection = () => {
   return (
     <section className={`hero-section ${bgColor}`}>
       <div className="hero-content">
-        <div className="collage-element collage-1">✂</div>
+        <div className="collage-element collage-1">◆</div>
         <div className="collage-element collage-2">★</div>
         <div className="collage-element collage-3">◆</div>
         
@@ -31,7 +31,7 @@ const HeroSection = () => {
         </h1>
         
         <p className="hero-subtitle">
-          Diseño Textil · Cultura Visual
+          Diseñadora Textil 
         </p>
 
         <button className="hero-button" onClick={scrollToProjects}>

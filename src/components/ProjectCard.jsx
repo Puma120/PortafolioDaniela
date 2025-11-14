@@ -22,7 +22,7 @@ const ProjectCard = ({ project, index }) => {
                 <span className="placeholder-icon">👗</span>
               </div>
             )}
-            <div className="image-cutout">✂ cut here...</div>
+            <div className="image-cutout">- - - cut here...</div>
           </div>
           
           {/* Elementos decorativos tipo paper dolls */}

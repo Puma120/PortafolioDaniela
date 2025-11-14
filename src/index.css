@@ -113,7 +113,7 @@ button:hover, .button:hover {
 }
 
 .cut-out::before {
-  content: '✂ cut here...';
+  content: '- - - cut here...';
   position: absolute;
   top: -20px;
   left: 20px;

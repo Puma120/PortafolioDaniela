@@ -118,7 +118,7 @@ const AboutMeSection = () => {
         </div>
 
         {/* Decoración tipo recorte */}
-        <div className="decoration-corner corner-1">✂</div>
+        <div className="decoration-corner corner-1">◆</div>
         <div className="decoration-corner corner-2">★</div>
       </div>
 
