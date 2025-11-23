@@ -33,6 +33,15 @@ const Footer = () => {
               <span className="label">TikTok</span>
             </a>
 
+            <a 
+              href="/CV_Daniela.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="social-link cv"
+            >
+              <span className="icon">📁</span>
+              <span className="label">CV</span>
+            </a>
             
           </div>
         </div>
