@@ -42,6 +42,14 @@ const Footer = () => {
               <span className="icon">📁</span>
               <span className="label">CV</span>
             </a>
+
+            <a 
+              href="mailto:daniela.bvz@hotmail.com" 
+              className="social-link email"
+            >
+              <span className="icon">✉️</span>
+              <span className="label">Email</span>
+            </a>
             
           </div>
         </div>

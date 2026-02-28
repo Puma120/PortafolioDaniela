@@ -25,6 +25,13 @@ const certificatesData = [
     theme: "El poder de lo femenino",
     icon: "🏆",
     image: "/Certificados/Reconocimiento_1erLugar_Repentina2023_page-0001.jpg"
+  },
+  {
+    title: "ExpoIbero 2025",
+    institution: "Universidad Iberoamericana",
+    year: "2025",
+    icon: "🏅",
+    image: "/Certificados/Certificado_expoIbero_2025.jpeg"
   }
 ];
 

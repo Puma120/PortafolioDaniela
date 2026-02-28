@@ -236,6 +236,26 @@ const projectsData = [
     ]
   },
   {
+    title: "SENSORIA",
+    category: "Diseño Inclusivo & Textil",
+    year: "2025",
+    description: "SENSORIA es una colección de indumentaria sensorial inclusiva que impulsa la autonomía y el bienestar en la infancia con TEA. Diseñada para niños de 4 a 12 años con Trastorno del Espectro Autista, la colección integra materiales suaves, estructuras adaptativas y elementos sensoriales que promueven la comodidad, favorecen la autorregulación emocional y estimulan la independencia en el proceso de vestirse, contribuyendo a su bienestar integral y a la inclusión social.",
+    keywords: ["INCLUSIÓN", "SENSORIAL", "TEA"],
+    inspiration: "Neurología sensorial, infancia con TEA, diseño adaptativo y autonomía en el vestir",
+    materials: "Materiales suaves e hipoalergénicos, estructuras adaptativas, elementos sensoriales reguladores",
+    coverVideo: "/Proyecto_sensoria/Video_Portada.mp4",
+    gallery: [
+      { src: "/Proyecto_sensoria/PRESENTACIÓN SENSORIA 2025_page-0001.jpg", title: "Presentación 1" },
+      { src: "/Proyecto_sensoria/PRESENTACIÓN SENSORIA 2025_page-0002.jpg", title: "Presentación 2" },
+      { src: "/Proyecto_sensoria/PRESENTACIÓN SENSORIA 2025_page-0003.jpg", title: "Presentación 3" },
+      { src: "/Proyecto_sensoria/PRESENTACIÓN SENSORIA 2025_page-0004.jpg", title: "Presentación 4" },
+      { src: "/Proyecto_sensoria/PRESENTACIÓN SENSORIA 2025_page-0005.jpg", title: "Presentación 5" },
+      { src: "/Proyecto_sensoria/PRESENTACIÓN SENSORIA 2025_page-0006.jpg", title: "Presentación 6" },
+      { src: "/Proyecto_sensoria/PRESENTACIÓN SENSORIA 2025_page-0007.jpg", title: "Presentación 7" },
+      { src: "/Proyecto_sensoria/PRESENTACIÓN SENSORIA 2025_page-0008.jpg", title: "Presentación 8" }
+    ]
+  },
+  {
     title: "NANOTECNOLOGÍA",
     category: "Diseño Innovador y Tecnológico",
     year: "2024",

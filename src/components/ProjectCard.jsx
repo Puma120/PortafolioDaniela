@@ -11,7 +11,16 @@ const ProjectCard = ({ project, index }) => {
         {/* Imagen principal con efecto collage */}
         <div className="project-image-container">
           <div className="project-main-image">
-            {project.coverImage ? (
+            {project.coverVideo ? (
+              <video
+                src={project.coverVideo}
+                className="project-cover-image"
+                autoPlay
+                loop
+                muted
+                playsInline
+              />
+            ) : project.coverImage ? (
               <img 
                 src={project.coverImage} 
                 alt={project.title}
